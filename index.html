@@ -12,7 +12,11 @@ if(isIOSChrome){
 	var intervalID = window.setInterval(myCallback, 1);
 	  // is Google Chrome
 } else { 
-	   // not Google Chrome 
+	   // not Google Chrome
+    var h = document.createElement("H1");
+    var t = document.createTextNode("Sorry, please reload this page on Google to see it change colors!");
+    h.appendChild(t);
+    document.body.appendChild(h);
 }
 function getRandomColor() {
 	var letters = '0123456789ABCDEF';
