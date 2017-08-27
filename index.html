@@ -2,6 +2,7 @@
 <meta name="theme-color" content="#000000" />
 </head>
 <body>
+<h1 style="text-align: center"></h1>
 <script language="javascript">
 var metaList = document.getElementsByTagName("meta");
 var isChromium = window.chrome, winNav = window.navigator, vendorName = winNav.vendor, isOpera = winNav.userAgent.indexOf("OPR") > -1, isIEedge = winNav.userAgent.indexOf("Edge") > -1, isIOSChrome = winNav.userAgent.match("CriOS");
@@ -13,10 +14,7 @@ if(isIOSChrome){
 	  // is Google Chrome
 } else { 
 	   // not Google Chrome
-    var h = document.createElement("H1");
-    var t = document.createTextNode("Sorry, please reload this page on Google to see it change colors!");
-    h.appendChild(t);
-    document.body.appendChild(h);
+	document.getElementsByTagName('h1')[0].innerHTML = "Sorry, please reload this page on Google Chrome to see it change colors!";
 }
 function getRandomColor() {
 	var letters = '0123456789ABCDEF';
